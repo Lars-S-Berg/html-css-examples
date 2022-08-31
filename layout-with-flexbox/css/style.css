@@ -9,34 +9,34 @@ body {
     margin: 0;
 }
 
-#main {
+main {
     display: flex;
     flex: 1;
     flex-direction: column;
 }
 
-#main > article {
+main > article {
     flex: 1;
 }
 
-#main > nav {
+nav {
     order: -1;
 }
 
-#main > nav, #main > aside {
+nav, aside {
     flex: 0 0 20vw 0;
     background-color: #85dcbb;
 }
 
 header {
     background-color: #c38d9e;
-    height: 30vw;
+    height: 10vw;
     color: white;
 }
 
 footer {
     background-color: #c38d9e;
-    height: 20vw;
+    height: 50vw;
     color: white;
 }
 
@@ -45,12 +45,11 @@ header, footer, article, nav, aside {
 }
 
 @media screen and (min-width: 350px){
-    #main {
+    main {
         flex-direction: row;
     }
 
-    #main > nav, #main > aside {
+    nav, aside {
             flex: 0 0 20vw 0;
-            background-color: goldenrod;
         }
 }
