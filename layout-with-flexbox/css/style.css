@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+#main > article {
+    flex: 1;
+}
+
+#main > nav {
+    order: -1;
+}
+
+#main > nav, #main > aside {
+    flex: 0 0 20vw 0;
+    background-color: #85dcbb;
+}
+
+header {
+    background-color: #c38d9e;
+    height: 30vw;
+    color: white;
+}
+
+footer {
+    background-color: #c38d9e;
+    height: 20vw;
+    color: white;
+}
+
+header, footer, article, nav, aside {
+    padding: 4vw;
+}
+
+@media screen and (min-width: 350px){
+    #main {
+        flex-direction: row;
+    }
+
+    #main > nav, #main > aside {
+            flex: 0 0 20vw 0;
+            background-color: goldenrod;
+        }
+}
