@@ -1,3 +1,3 @@
-# A responsive page
+# A flexbox gallery
 
-This is a message from Lars branch
+Gallery made with flexbox

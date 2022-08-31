@@ -1,3 +1,3 @@
 # A responsive page
 
-This is a message from Lars branch
+A basic webpage, with basic responsive tech
