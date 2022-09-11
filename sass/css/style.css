@@ -1,7 +1,8 @@
 @charset "UTF-8";
 header {
   background: lightgray;
-  padding: 4vw; }
+  padding: 4vw;
+}
 
 main, section {
   display: flex;
@@ -9,9 +10,10 @@ main, section {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background-color: #31738a;
+  background-color: rgb(49, 115, 138);
   align-items: flex-start;
-  padding-left: 100px; }
+  padding-left: 100px;
+}
 
 /* jmf tidigare
 section {
@@ -24,27 +26,31 @@ section {
 
 med hur extensions kan överföras (och överskrivas) */
 section {
-  background-color: #313e42;
+  background-color: rgb(49, 62, 66);
   flex-wrap: wrap;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+}
 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 button {
-  background: #72779e;
+  background: rgb(114, 119, 158);
   padding: 10px 25px 10px 25px;
-  color: white; }
-  button:hover {
-    background-color: #575757; }
+  color: white;
+}
+button:hover {
+  background-color: rgb(87, 87, 87);
+}
 
 .btn-readmore {
-  background: #575757; }
-  .btn-readmore::after {
-    content: " > Some text after the element";
-    color: white; }
-
-/*# sourceMappingURL=style.css.map */
+  background: rgb(87, 87, 87);
+}
+.btn-readmore::after {
+  content: " > Some text after the element";
+  color: white;
+}/*# sourceMappingURL=style.css.map */
