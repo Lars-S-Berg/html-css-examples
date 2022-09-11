@@ -1,0 +1,18 @@
+@import "./variables-functions";
+
+button {
+    background: $btn-background;
+    padding: 10px 25px 10px 25px;
+    color: $btn-color;
+    &:hover {
+        background-color: $btn-hoverbackgroundcolor;
+    }
+}
+
+.btn-readmore {
+    background: $btn-hoverbackgroundcolor;
+    &::after {
+        content: " > Some text after the element";
+        color: $btn-color;
+    }
+}

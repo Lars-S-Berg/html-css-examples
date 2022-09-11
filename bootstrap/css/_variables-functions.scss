@@ -1,0 +1,15 @@
+$btn-background: rgb(114, 119, 158);
+$btn-color: white;
+$btn-hoverbackgroundcolor: rgb(87, 87, 87);
+
+$header-background: lightgray;
+
+$main-backgroundcolor: rgb(49, 115, 138); 
+$section-backgroundcolor: rgb(49, 62, 66);
+
+@mixin flexFactory($flex-direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $flex-direction;
+}
