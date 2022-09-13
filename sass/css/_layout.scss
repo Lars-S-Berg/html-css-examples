@@ -1,0 +1,24 @@
+@import "./variables-functions";
+
+header {
+    background: $header-background;
+    padding: 4vw;
+}
+
+main {
+    @include flexFactory(column);
+    height: 100vh;
+    background-color: $main-backgroundcolor;
+}
+
+/* lägg märke till hur section via @extend får allt som finns i main, inklusive allt som finns i flexFactory()
+    och hur background-color skrivs över med ett nytt värde */
+section {
+    @extend main;
+    background-color: $section-backgroundcolor;
+    justify-content: flex-end;
+}
+
+footer {
+    @include flexFactory(row);
+}

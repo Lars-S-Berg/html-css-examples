@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <title>Bulldog prod | Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <!-- Den viktiga containern som omsluter hela sidan-->
+  <!-- conationer är standarinställning, och har Prova inställningen container-fluid för att få en helskärm -->
+  <div class="container">
+    <!-- header ingår ju inte i deras col- system, men det fungerar fint att annama på den med -->
+      <header class="row custom-row col-12">
+        Bootstrap
+      </header>
+    <div class="row">
+      <div class="col-sm-2 col-md-6 col-lg-5">Ett</div>
+      <div class="col-sm-4 col-md-6 col-lg-5">Två</div>
+      <div class="col-sm-2 col-md-6 col-lg-1">Tre</div>
+      <div class="col-sm-4 col-md-6 col-lg-1">Fyra</div>
+    </div>
+    <div class="row m-2 custom-row text-danger justify-content-between align-items-center">
+      <div class="col-sm-4 order-md-1">
+        <div class="p-3 border bg-white">Fem</div>
+      </div>
+      <div class="col-sm-4 order-md-2">
+        <div class="p-3 border bg-white">Sex</div>
+      </div>
+    </div> 
+    <div class="row mt-1 custom-row-1 text-light bg-secondary gx-4">
+      <div class="col-sm-3 offset-2"><div class="bg-dark p-3">Sju</div></div>
+      <div class="col-sm-4 offset-1"><div class="bg-dark p-3">Åtta</div></div>
+    </div>
+
+    <!-- Ovan handlar om layoten. Här nedan visas ett exempel med en carousel -->
+    <div class="col">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="./img/pexels-photo-12161836.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Change to something nice!</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img src="./img/pexels-photo-12705772.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/pexels-photo-12780808.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+  </script>
+</body>
+</html>

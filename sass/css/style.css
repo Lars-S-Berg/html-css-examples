@@ -1,0 +1,43 @@
+@charset "UTF-8";
+header {
+  background: lightgray;
+  padding: 4vw;
+}
+
+main, section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 100px;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(49, 115, 138);
+}
+
+/* lägg märke till hur section via @extend får allt som finns i main, inklusive allt som finns i flexFactory()
+    och hur background-color skrivs över med ett nytt värde */
+section {
+  background-color: rgb(49, 62, 66);
+  justify-content: flex-end;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 100px;
+  flex-direction: row;
+}
+
+button {
+  background: rgb(114, 119, 158);
+  padding: 10px 25px 10px 25px;
+  color: white;
+}
+button:hover {
+  background-color: rgb(87, 87, 87);
+}
+button::after {
+  content: " > text adderad";
+  color: white;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+@import "./variables-functions";
+
+button {
+    background: $btn-background;
+    padding: 10px 25px 10px 25px;
+    color: $btn-color;
+    &:hover {
+        background-color: $btn-hoverbackgroundcolor;
+    }
+    &::after {
+        content: " > text adderad";
+        color: $btn-color;
+    }
+}
